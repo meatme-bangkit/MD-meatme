@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=
+
+
+        ".MainActivity">
+
+
+
+    <!--
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="#B22222"
+            app:itemTextColor="#000000"
+            app:menu="@menu/bottom_nav_menu" />
+    -->
+
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/backbutton"/>
+
+
+
+    <!-- open judul
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETEKSI KESEGARAN DAGING SAPI"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"/>
+     close judul -->
+
+
+    <!-- open icon add photo -->
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="250dp"
+            android:src="@drawable/addphoto"/>
+
+
+    </LinearLayout>
+    <!-- close icon add photo  -->
+
+
+    <!-- open image button add photo -->
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+    </LinearLayout>
+    <!-- close image button add photo -->
+
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="270dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:id="@+id/tvResult"
+            android:layout_marginTop="10dp"/>
+        -->
+
+        <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:id="@+id/tvResult2"
+            android:layout_marginTop="10dp"/>
+        -->
+
+        <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:id="@+id/tvOutput2"
+            android:layout_marginTop="10dp"/>
+        -->
+
+        <!-- open deskripsi -->
+        <!-- close deskripsi -->
+
+
+        <!--open ambil foto dari kamera -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="start"
+            android:text="Note : Anda bisa memilih kamera untuk mengambil gambar secara langsung atau bisa memilih galery untuk mengupload gambar lalu bisa menekan tombol Deteksi untuk mendeteksi kesegarannya" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:id="@+id/buttoncamera"
+                android:textStyle="bold"
+                android:backgroundTint="#8C0000"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:background="@drawable/border2"
+                android:text="Ambil Foto Langsung"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonChoose"
+                android:backgroundTint="#8C0000"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:text="Upload Dari Galeri"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!--button deteksi -->
+        <Button
+            android:elevation="3dp"
+            android:id="@+id/buttonUpload"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:text="Deteksi Kesegaran"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+        <!--button deteksi -->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Judul dan Search -->
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Judul -->
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="MeatMe."
+                    android:textColor="#8C0000"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:elevation="2dp"
+                        android:background="@drawable/roundsearch"
+                        android:id="@+id/editTextSearch"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="16dp"
+                        android:hint="Cari Daging"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_shopping_cart_24"
+                        android:id="@+id/cart"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Judul dan Search -->
+
+
+
+            <!-- open greating -->
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcometext"/>
+            <!-- close greating -->
+
+
+
+            <!-- open banner -->
+            <ImageView
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/rounded_background"
+                android:src="@drawable/banner1"/>
+            <!-- close banner -->
+
+
+
+
+
+
+            <!-- open title -->
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Pilih jenis daging sapi"
+                android:layout_marginRight="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- close title -->
+
+
+
+
+
+
+
+
+            <!-- open produk -->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <!-- Produk 1 -->
+                <LinearLayout
+                    android:elevation="3dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundsearch"
+                    android:id="@+id/product_1"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:background="@drawable/roundsearch"
+                        android:id="@+id/product_image_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/product_title_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chuck"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+
+                <!-- Produk 2 -->
+                <LinearLayout
+                    android:elevation="3dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundsearch"
+                    android:id="@+id/product_2"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <ImageView
+                        android:textAlignment="center"
+                        android:id="@+id/product_image_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/product_title_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brisket"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Produk 3 -->
+            <LinearLayout
+                android:elevation="3dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/roundsearch"
+                android:id="@+id/product_3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <ImageView
+                    android:background="@drawable/roundsearch"
+                    android:id="@+id/product_image_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/product_title_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ribs"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Produk 4 -->
+            <LinearLayout
+                android:elevation="3dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/roundsearch"
+                android:id="@+id/product_4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <ImageView
+                    android:id="@+id/product_image_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/product_title_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plate"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Produk 5 -->
+                <LinearLayout
+                    android:elevation="3dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundsearch"
+                    android:id="@+id/product_5"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <ImageView
+                        android:background="@drawable/roundsearch"
+                        android:id="@+id/product_image_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/product_title_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sirloin"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+                <!-- Produk 6 -->
+                <LinearLayout
+                    android:elevation="3dp"
+                    android:background="@drawable/roundsearch"
+                    android:layout_margin="10dp"
+                    android:id="@+id/product_6"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <ImageView
+                        android:background="@drawable/roundsearch"
+                        android:id="@+id/product_image_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/product_title_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tenderloin"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Produk 7 -->
+                <LinearLayout
+                    android:elevation="3dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundsearch"
+                    android:id="@+id/product_7"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <ImageView
+                        android:background="@drawable/roundsearch"
+                        android:id="@+id/product_image_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/product_title_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Flank"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+
+                <!-- Produk 8 -->
+                <LinearLayout
+                    android:elevation="3dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundsearch"
+                    android:id="@+id/product_8"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <ImageView
+                        android:background="@drawable/roundsearch"
+                        android:id="@+id/product_image_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/product_title_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Round"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- close produk -->
+
+
+            <!-- open view kosong -->
+            <LinearLayout
+                android:id="@+id/viewkosong"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+            </LinearLayout>
+
+            <!-- close view kosong -->
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="#B22222"
+        app:itemTextColor="#000000"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

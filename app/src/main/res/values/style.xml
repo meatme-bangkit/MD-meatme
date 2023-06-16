@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">#FF0000</item>       <!-- Warna latar belakang pop-up -->
+        <item name="colorPrimaryDark">#FF0000</item>   <!-- Warna latar belakang header pop-up -->
+        <item name="colorAccent">#000000</item>        <!-- Warna teks dan ikon dalam pop-up -->
+        <item name="android:alertDialogTheme">@style/CustomAlertDialogTheme</item> <!-- Menentukan tema dialog yang digunakan -->
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">#FF0000</item> <!-- Warna latar belakang dialog -->
+    </style>
+
+</resources>

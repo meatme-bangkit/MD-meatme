@@ -1,0 +1,29 @@
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/deteksi"
+        android:state_checked="true"
+        android:color="#000000" />
+
+    <item android:id="@+id/pasar"
+        android:state_checked="true"
+        android:color="#000000" />
+
+    <item android:id="@+id/account"
+        android:state_checked="true"
+        android:color="#000000" />
+
+    <!-- Menambahkan item untuk warna hitam saat state_checked bernilai false -->
+
+    <item android:id="@+id/deteksi"
+        android:state_checked="false"
+        android:color="#000000" tools:ignore="DuplicateIds" />
+
+    <item android:id="@+id/pasar"
+        android:state_checked="false"
+        android:color="#000000" tools:ignore="DuplicateIds" />
+
+    <item android:id="@+id/account"
+        android:state_checked="false"
+        android:color="#000000" tools:ignore="DuplicateIds" />
+</selector>
